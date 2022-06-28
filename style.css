@@ -182,16 +182,22 @@ a {
     color: #4D5465;
     font-size: 2vw;
     font-weight: 800;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
 }
 
-.tab-nav_elem:active {
+.tab-nav_elem.active {
     color: #579D45;
     border-bottom: 3px solid #579D45;
 }
 
 .tab-desc_elem {
-    display: flex;
+    display: none;
     width: 100%;
+}
+
+.tab-desc_elem.active {
+    display: flex;
 }
 
 .tab-desc_elem img {
