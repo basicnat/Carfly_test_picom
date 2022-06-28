@@ -8,7 +8,7 @@
 <body>
     <navbar class="navbar">
         <nav class="navbar_nav nav">
-            <div class="nav_elem">Услуги</div>
+            <div class="nav_elem"><a href="#">Услуги</a> </div>
             <div class="nav_elem">О парковке</div>
             <div class="nav_elem"> Где мы?</div>
             <div class="nav_elem">Камеры</div>
@@ -22,23 +22,84 @@
         </contacts>
     </navbar>
     <header class="header">
-        <img src="img/header_fore.png">
-        <img src="img/header_back.png">
-        <h1 class="">Парковка в Пулково с трансфером в аэропорт</h1>
+        <img class="header_fore-img" src="img/header_fore.png">
+        <img class="header_back-img" src="img/header_back.png">
+        <div class="header_headline"><h1>Парковка в Пулково <br>с трансфером <br>в аэропорт</h1></div>
         <div class="header_terms">
-            <div></div>
-            <div></div>
-            <div></div>
+            <table>
+                <tr>
+                    <td class="header_terms_time">1 - 2 дня</td>
+                    <td class="header_terms_time">3 - 7 дней</td>
+                    <td class="header_terms_time">7 - 14 дней</td>
+                </tr>
+                <tr>
+                    <td class="header_terms_price">350 рублей</td>
+                    <td class="header_terms_price">250 рублей</td>
+                    <td class="header_terms_price">200 рублей</td>
+                </tr>
+            </table>
         </div>
-        <form>
-            <div></div>
-            <div></div>
-            <button>Найти место</button>
+        <form class="header_form">
+            <div class="header_form_input">
+                <label>Дата и время въезда (вылет - 3 часа)</label>
+                <div class="inputs">
+                    <input type="date">
+                    <div class="input_date-in"></div>
+                    <input type="time">
+                    <div class="input_time-in"></div>
+                </div>
+            </div>
+            <div class="header_form_input">
+                <label>Дата и время выезда (прилет + 1 час)</label>
+                <div class="inputs">
+                    <input type="date">
+                    <div class="input_date-out"></div>
+                    <input type="time">
+                    <div class="input_time-in"></div>
+                </div>
+            </div>
+            <button class="header_form_button">Найти место</button>
         </form>
     </header>
-    <content>
 
+
+    <content>
+        <div class="content_options">
+            <h2 class="content_options_headline">Услуги</h2>
+            <div class="options">
+                <div class="options_tab-nav">
+                    <div class="tab-nav_elem">Бесплатный трансфер</div>
+                    <div class="tab-nav_elem">Комфортное оформление</div>
+                    <div class="tab-nav_elem">Дополнительно</div>
+                </div>
+                <div class="options_tab-desc">
+                    <div class="tab-desc_elem">
+                        <img src="img/transfer.png">
+                        <ul>
+                            <li>
+                            Следите онлайн за
+                            местонахождением автобуса!
+                            </li>
+                            <li>
+                            Вежливый водитель, 5 минут в
+                            пути, запись происходящегов
+                            салоне для решения
+                            конфликтных ситуаций
+                            </li>
+                            <li>
+                            При необходимости
+                            устанавливается детское кресло в автомобиль
+                            трансфера
+                            </li>
+                        </ul>
+                    </div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
     </content>
     <footer></footer>
+<script src="script.js" rel="script"></script>
 </body>
 </html>
